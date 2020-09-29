@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="content">
+        <nav class="navbar row navbar-expand-md navbar-light bg-light ">
+            <div class="col-md-8 pl-3">
+                <h2><i class="fa fa-instagram my-2 my-lg-0  pl-3" aria-hidden="true"></i> Instagram</h2>
+            </div>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+            create a new post card
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </button>
+                            <textarea id="w3review" name="w3review" rows="4" cols="50">
+                            </textarea>
+                        </div>
+                        <div class="modla body pl-5 ">
+                            <i class="fa fa-camera border " aria-hidden="true"></i>
+                            <i class="fa fa-map-marker border" aria-hidden="true"></i>
+                        </div> 
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+                            <button type="button" class="btn btn-success">publish</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown col-2">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            
+        </nav>     
+        <div class="pills">
+            <ul class="nav nav-tabs justify-content-center bg-white" id="myTab" role="tablist">
+                <li class="nav-item " role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-table" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-stop" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card mx-auto mt-5  " style="width: 38rem;">
+                        <div class="head display-4 "><strong>My First Photo</strong></div> 
+                        <div class="header text-secondary text-right "><p>12/14</p></div>
+                        <img src="https://i.ytimg.com/vi/ODvwgt8B7X8/maxresdefault.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="footer pl-2 pt-1">
+                            <p class="font-weight-bold">23 Likes</p>
+                            <p> Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p> This is my photo to practice code with <strong> #4geecks academy</strong></p>
+                            <i class="fa fa-heart-o pl-3 text-secondary" aria-hidden="true"> Comment...</i>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><table class="table">
+                   
+                    <div class="container">
+                        <div class="row">
+                            <div class="col mb-3">
+                            <img src="https://i.ytimg.com/vi/ODvwgt8B7X8/maxresdefault.jpg" width="350px" height="280"alt="">
+                            </div>
+                            <div class="col">
+                             <img src="https://i.ytimg.com/vi/ttZjYQHlwpo/maxresdefault.jpg" width="350px"  height="280" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                             <img src="https://th.bing.com/th/id/OIP.LOEgmdr1Fz7xTaRjwuYyRQHaEK?pid=Api&rs=1" width="350px" height="280" alt="" srcset="">
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col mb-3">
+                            <img src="http://javitour.com/wp-content/uploads/2016/04/ciudades-de-Estados-Unidos-2_opt.jpg" width="350px" height="280" alt="">
+                            </div>
+                            <div class="col">
+                             <img src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/nuestrorumbo/P/Pittsburgh-la-ciudad-de-acero-1.jpg" width="350" height="280" srcset="">
+                            </div>
+                            <div class="col">
+                             <img src="http://2.bp.blogspot.com/_WLJ0HkOfy5c/Sc6hTntDTkI/AAAAAAAAACE/eSUGuzVCzv0/S660/colores-de-la-paredes[1].jpg" width="350" height="280"  alt="">
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col ">
+                            <img src="https://www.lavanguardia.com/r/GODO/LV/p3/WebSite/2016/05/20/Recortada/img_mbigas_20160520-135524_imagenes_lv_getty_taj-k6e-U401920311809rVB-992x558@LaVanguardia-Web.jpg" width="350px" height="280" alt="">
+                            </div>
+                            <div class="col">
+                             <img src="https://www.aviancaenrevista.com/wp-content/uploads/2017/09/usa-avianca.png" width="350px" height="280" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                             <img src="https://th.bing.com/th/id/OIP.AeXijus7NeYU48NBq_Av8QHaEK?pid=Api&rs=1" width="350px" height="280" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
